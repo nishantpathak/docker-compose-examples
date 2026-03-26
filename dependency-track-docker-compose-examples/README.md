@@ -27,7 +27,7 @@ As a matter of fact, the details of the directory structure is explained in the 
 ![Structure of the directory associated with the docker file](./pics/directory-structure.png)
 
 **BEWARE** : since the first publication of this Docker Compose example, Trivy which is used to generate the SBOM and is included in the Docker Compose to be used as a vulnerabilities scanner has been compromised by several attacks (see https://socket.dev/blog/trivy-under-attack-again-github-actions-compromise for example). 
-Be extremely wary in using the provided Docker Compose and Trivy : do not blindly use the `latest` Trivy docker image and check the version you use is not compromise.
+Be extremely wary in using the provided Docker Compose and Trivy : do not blindly use the `latest` Trivy docker image and check the version you use has not been compromised.
 
 ## Running the container with Dependency Track
 
