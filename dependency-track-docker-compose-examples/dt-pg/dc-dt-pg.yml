@@ -90,6 +90,8 @@ services:
     networks:
       - postgres_network
 
+  # Since the first version of this DC file Trivy has been attacked and compromised.
+  # Do not use the latest image of Trivy blindly without checking the security of the image and the image source.
   trivy-server:
     image: aquasec/trivy:latest
     container_name: trivy-server
